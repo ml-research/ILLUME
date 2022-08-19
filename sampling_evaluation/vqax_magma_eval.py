@@ -64,7 +64,7 @@ tempsX = args.tempsX
 # create save file directory
 os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
-# how to prompt explanations can be extened as needed
+# how to prompt explanation generation. can be extended as needed
 expl_prompts = [', seeing that']
 
 

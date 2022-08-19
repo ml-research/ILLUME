@@ -9,9 +9,9 @@ services:
      dockerfile: Dockerfile
     shm_size: 10gb
     volumes:
-     - /storage-01/ml-mbrack/repositories/ILLUME:/workspace/repositories/ILLUME
-     - /storage-02/common-repos/MultimodalExplanationLearning/MAGMA:/workspace/MAGMA
-     - /storage-02/common-repos/MultimodalExplanationLearning/datasets:/workspace/datasets
+     - <TODO>:/workspace/repositories/ILLUME
+     - <TODO>:/workspace/MAGMA
+     - <TODO>:/workspace/datasets/COCO
     entrypoint: zsh
     stdin_open: true
     tty: true
@@ -22,5 +22,5 @@ services:
             - driver: nvidia
               capabilities: [gpu]
     ports:
-      - "8010:8888"
+      - "<TODO>:8888"
 
