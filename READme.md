@@ -1,7 +1,7 @@
 # ILLUME: Rationalizing Vision-Language Models by Interacting with their Jabber
 
 Official implementation of the ILLUME approach for interactive fine-tuning of VLM. Includes data and examples to 
-run the ILLUME pipeline for VQA-X as presented in the paper.
+run the ILLUME pipeline for VQA-X as presented in the paper available at https://arxiv.org/abs/2208.08241.
 
 
 ![My Image](images/figure_readme.png)
