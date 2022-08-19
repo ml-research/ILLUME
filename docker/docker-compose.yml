@@ -1,0 +1,26 @@
+version: '3.6'
+services:
+  illume:
+    privileged: true
+    container_name: illume
+    image: illume
+    build:
+     context: .
+     dockerfile: Dockerfile
+    shm_size: 10gb
+    volumes:
+     - /storage-01/ml-mbrack/repositories/ILLUME:/workspace/repositories/ILLUME
+     - /storage-02/common-repos/MultimodalExplanationLearning/MAGMA:/workspace/MAGMA
+     - /storage-02/common-repos/MultimodalExplanationLearning/datasets:/workspace/datasets
+    entrypoint: zsh
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    ports:
+      - "8010:8888"
+
