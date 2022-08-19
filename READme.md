@@ -4,7 +4,7 @@ Official implementation of the ILLUME approach for interactive fine-tuning of VL
 run the ILLUME pipeline for VQA-X as presented in the paper.
 
 
-![My Image](images/figure_readme-removebg.png)
+![My Image](images/figure_readme.png)
 ## Computing requirements
 
 Evaluating and sampling takes roughly 15 GB on a A100 GPU. 
