@@ -3,9 +3,7 @@
 Official implementation of the ILLUME approach for interactive fine-tuning of VLM. Includes data and examples to 
 run the ILLUME pipeline for VQA-X as presented in the paper.
 
-## Abstract 
-
-Bootstrapping from pre-trained language models has been proven to be an efficient approach for building foundation vision-language models (VLM) for tasks such as image captioning or visual question answering. However, it is difficult-if not impossible-to utilize it to make the model conform with user's rationales for specific answers. To elicit and reinforce commonsense reasons, we propose an iterative sampling and tuning paradigm, called ILLUME, that executes the following loop: Given an image-question-answer prompt, the VLM samples multiple candidate rationales, and a human critic provides minimal feedback via preference selection, used for fine-tuning. This loop increases the training data and gradually carves out the VLM's rationalization capabilities. Our exhaustive experiments demonstrate that ILLUME is competitive with standard supervised fine-tuning while using significantly fewer training data and only requiring minimal feedback.
+![My Image](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_7b625205-2474-4029-8f31-d56e54cad179.png)
 
 ## Computing requirements
 
