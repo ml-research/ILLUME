@@ -3,7 +3,7 @@
 Official implementation of the ILLUME approach for interactive fine-tuning of VLM. Includes data and examples to 
 run the ILLUME pipeline for VQA-X as presented in the paper.
 
-![My Image](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_7b625205-2474-4029-8f31-d56e54cad179.png)
+![My Image](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_640.png)
 
 ## Computing requirements
 
