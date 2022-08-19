@@ -3,8 +3,8 @@
 Official implementation of the ILLUME approach for interactive fine-tuning of VLM. Includes data and examples to 
 run the ILLUME pipeline for VQA-X as presented in the paper.
 
-![My Image](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_400.png)
 
+![My Image](images/figure_readme.png)
 ## Computing requirements
 
 Evaluating and sampling takes roughly 15 GB on a A100 GPU. 
