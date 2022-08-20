@@ -81,3 +81,8 @@ Afterwards, run and follow the instruction in  the jupyter notebook
 
 ### 6) Repeat
 Choose one suitable epoch (based on NLG scores) from the previous iteration and repeat the sampling and training process with the respective checkpoint.
+
+
+![Midjourney](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_400.png)
+
+Artistic visualization of ILLUME created by Midjourney using the prompt <i>Illume, AI, machine learning, vision, question-answer commonsense reasons, rationalization, human feedback, loop</i>
