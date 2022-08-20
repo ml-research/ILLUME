@@ -85,4 +85,4 @@ Choose one suitable epoch (based on NLG scores) from the previous iteration and 
 
 ![Midjourney](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_400.png)
 
-Artistic visualization of ILLUME created by Midjourney using the prompt <i>Illume, AI, machine learning, vision, question-answer commonsense reasons, rationalization, human feedback, loop</i>
+Artistic visualization of ILLUME created by [MidJourney](https://midjourney.gitbook.io/docs/) using the prompt <i>Illume, AI, machine learning, vision, question-answer commonsense reasons, rationalization, human feedback, loop</i>
