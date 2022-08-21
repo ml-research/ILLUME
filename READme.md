@@ -16,7 +16,7 @@ paper (256), it takes up over 75GB on 8 A100 GPUs each.
 The provided code requires downloading the following resources before running it.
 
 ### MAGMA checkpoint
-You can download MAGMA weights and config file from the official GitHub repository at https://github.com/Aleph-Alpha/magma, or directly from https://bit.ly/aleph_alpha_magma_download. Please note that this checkpoint may
+You can find weights, config files and the paper of the used MAGMA model in the official GitHub repository https://github.com/Aleph-Alpha/magma. Weights can directly be downloaded from https://bit.ly/aleph_alpha_magma_download. Please note that this checkpoint may
 slightly differ from the one used in the paper. However, the performance is expected to be similar.
 
 Please consult the ```Docker container``` section on how to properly link your checkpoint and configuration.
