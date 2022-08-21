@@ -8,16 +8,15 @@ run the ILLUME pipeline for VQA-X as presented in the paper available at https:/
 ## Computing requirements
 
 Evaluating and sampling takes roughly 15 GB on a A100 GPU.
-Fine-tuning the model with deepspeed requires at least 45GB of VRAM with the batch size chosen in the
-paper (256) takes up over 75GB on 8 A100 GPUs each.
+Fine-tuning the model with deepspeed requires at least 45GB of VRAM. With the batch size chosen in the
+paper (256), it takes up over 75GB on 8 A100 GPUs each.
 
 ## Prerequisites
 
 The provided code requires downloading the following resources before running it.
 
 ### MAGMA checkpoint
-You can download MAGMA weights and config file from the official GitHub repository at https://github.com/Aleph-Alpha/magma.
-Note or directly from https://bit.ly/aleph_alpha_magma_download. Please note that this checkpoint may
+You can download MAGMA weights and config file from the official GitHub repository at https://github.com/Aleph-Alpha/magma, or directly from https://bit.ly/aleph_alpha_magma_download. Please note that this checkpoint may
 slightly differ from the one used in the paper. However, the performance is expected to be similar.
 
 Please consult the ```Docker container``` section on how to properly link your checkpoint and configuration.
@@ -25,7 +24,7 @@ Please consult the ```Docker container``` section on how to properly link your c
 ### COCO images and VQA-X dataset
 Download the 2014 COCO train and val images from https://cocodataset.org/#download.
 In the COCO directory create a directory ````VQA-X```` and place the VQA-X data for all splits provided in this repository
-in ```./utils /vqax_splits```.
+in ```./utils/vqax_splits```.
 
 Please consult the ```Docker container``` section on how to properly link your image directory.
 
@@ -49,7 +48,7 @@ and subsequently only loaded from memory. In order to generate those embeddings 
 You may perform this in parallel on multiple GPUs using the ```-sp``` argument. E.g call ```python data_preperation/vqax_magma_embed_training_data.py -sp 0 2``` for one GPU and ```python data_preperation/vqax_magma_embed_training_data.py -sp 1 2``` on another.
 
 ### 1) Sample training data
-Generated samples (jabber) from the training data using ```./sampling_evaluation/vqax_magma_eval.py```.
+Generate samples (jabber) from the training data using ```./sampling_evaluation/vqax_magma_eval.py```.
 An exemplary call to generate ```5``` explanations each at temperatures ```0.3 & 0.9``` which conditions on the ground truth data from the training set would look like this:
 ```python sampling_evaluation/vqax_magma_eval.py -d train -ng 5 -tx 0.3 0.8 -gt -s ./results/vqax/it0/train```.
 For subsequent iterations that use the model from the previous checkpoint provide the ```-m``` argument pointing to the respective model checkpoint.
@@ -73,16 +72,17 @@ After each training epoch a checkpoint of the model is stored at ```/workspace/M
 
 ### 4) Evaluate on validation split
 For each training epoch of the previous step, generate examples on the validation split ```./sampling_evaluation/vqax_magma_eval.py```
-by setting ```-m``` to the respective checkpoint. We recommend generating one explanation at temperature o.1.
+by setting ```-m``` to the respective checkpoint. We recommend generating one explanation at temperature 0.1.
 
 Afterwards, run and follow the instruction in  the jupyter notebook
 ````./sampling_evaluation/critic_validation.ipynb```` to calculate NLG scores.
 
 
-### 6) Repeat
+### 5) Repeat
 Choose one suitable epoch (based on NLG scores) from the previous iteration and repeat the sampling and training process with the respective checkpoint.
 
 
 ![Midjourney](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_400.png)
 
-Artistic visualization of ILLUME created by [MidJourney](https://midjourney.gitbook.io/docs/) using the prompt <i>Illume, AI, machine learning, vision, question-answer commonsense reasons, rationalization, human feedback, loop</i>
+Artistic visualization of ILLUME created by [MidJourney](https://midjourney.gitbook.io/docs/) using the prompt
+<i>Illume, AI, machine learning, vision, question-answer commonsense reasons, rationalization, human feedback, loop</i>
