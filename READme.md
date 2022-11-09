@@ -82,6 +82,17 @@ Afterwards, run and follow the instruction in  the jupyter notebook
 Choose one suitable epoch (based on NLG scores) from the previous iteration and repeat the sampling and training process with the respective checkpoint.
 
 
+## Citation
+If you like or use our work please cite us:
+```bibtex
+@article{brack2022illume,
+      title={ILLUME: Rationalizing Vision-Language Models by Interacting with their Jabber}, 
+      author={Manuel Brack and Patrick Schramowski and Björn Deiseroth and Kristian Kersting},
+      year={2022},
+      journal={arXiv preprint arXiv:2208.08241}
+}
+```
+
 ![Midjourney](images/Patricks_Illume_AI_machine_learning_vision_question-answer_comm_400.png)
 
 Artistic visualization of ILLUME created by [MidJourney](https://midjourney.gitbook.io/docs/) using the prompt
