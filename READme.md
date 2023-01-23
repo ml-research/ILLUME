@@ -1,4 +1,4 @@
-# ILLUME: Rationalizing Vision-Language Models by Interacting with their Jabber
+# ILLUME: Rationalizing Vision-Language Models through Human Interactions
 
 Official implementation of the ILLUME approach for interactive fine-tuning of VLM. Includes data and examples to
 run the ILLUME pipeline for VQA-X as presented in the paper available at https://arxiv.org/abs/2208.08241.
@@ -86,7 +86,7 @@ Choose one suitable epoch (based on NLG scores) from the previous iteration and 
 If you like or use our work please cite us:
 ```bibtex
 @article{brack2022illume,
-      title={ILLUME: Rationalizing Vision-Language Models by Interacting with their Jabber}, 
+      title={ILLUME: Rationalizing Vision-Language Models through Human Interactions}, 
       author={Manuel Brack and Patrick Schramowski and Björn Deiseroth and Kristian Kersting},
       year={2022},
       journal={arXiv preprint arXiv:2208.08241}
