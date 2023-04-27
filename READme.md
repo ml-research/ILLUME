@@ -85,11 +85,11 @@ Choose one suitable epoch (based on NLG scores) from the previous iteration and 
 ## Citation
 If you like or use our work please cite us:
 ```bibtex
-@article{brack2022illume,
+@inproceedings{brack2023illume,
       title={ILLUME: Rationalizing Vision-Language Models through Human Interactions}, 
       author={Manuel Brack and Patrick Schramowski and Björn Deiseroth and Kristian Kersting},
-      year={2022},
-      journal={arXiv preprint arXiv:2208.08241}
+      year={2023},
+      booktitle={Proceedings of the 40th International Conference on Machine Learning (ICML)}
 }
 ```
 
